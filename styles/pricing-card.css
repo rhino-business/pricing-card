@@ -1,0 +1,185 @@
+
+.container {
+    display: grid;
+    border: 0.02rem solid transparent;
+    place-items: center;
+}
+.box {
+    display: grid;
+    border: 0.05rem solid transparent;
+    place-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.card {
+    display: grid;
+    border-left: 0.02rem solid transparent; 
+    border-right: 0.02rem solid transparent;
+    border-bottom: 0.02rem solid transparent;
+    border-top: 0.02rem solid rgba(210, 210, 210, 1);
+    position: relative;
+    place-items: center;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0rem 0.9rem 0.65rem 0.05rem rgba(210, 210, 210, 1), 0 0 0.4rem 0.4rem inset rgba(36, 88, 222, 0.1);
+    background: rgba(36, 88, 222, 0.5); 
+}
+.card::before {
+    display: grid;
+    position: absolute;
+    content: "";
+    border: 0.02rem solid rgba(188, 75, 255, 1);
+    width: 10rem;
+    height: 10rem;
+    background:linear-gradient(458deg, rgba(247, 255, 247, 1), rgba(188, 75, 255, 1));
+    top: 0;
+    margin-top: 6rem;
+    border-radius: 0.5rem;
+}
+.card::after {
+    display: grid;
+    position: absolute;
+    content: "";
+    border: 0.02rem solid rgba(188, 75, 255, 1);
+    width: 8rem;
+    height: 9rem;
+    background-blend-mode: color-burn;
+    background: linear-gradient(rgba(247, 255, 247, 1), rgba(247, 255, 247, 1)), url('../images/outdoor-plant.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-top: -5.5rem;
+    border-radius: 0.5rem;
+}
+section {
+    display: grid;
+    width: 100%;
+    border: 0.02rem solid transparent;
+    place-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: "Overlock"; 
+}
+#heading {
+    margin-top: -1rem;
+    border: 0.02rem solid rgba(188, 75, 255, 0.3);
+    background:linear-gradient(458deg, rgba(247, 255, 247, 1), rgba(188, 75, 255, 1));
+}
+#heading h1 {
+   margin-left: 0.2rem; 
+   margin-right: 0.2rem; 
+   font-size: 1.7rem;
+   color: rgba(26, 83, 92, 1);
+}
+#text {
+   margin-top: 8rem;
+}
+#text h2 {
+   margin-left: 0.2rem; 
+   margin-right: 0.2rem; 
+   font-size: 1.3rem;
+   color: rgba(26, 83, 92, 1);
+}
+#price_section {
+   margin-top: -2rem;
+}
+.price_section_element {
+   clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+   width: 8rem;
+   height: 3rem;
+   background: rgba(257, 104, 75, 0.6);
+   box-shadow: 0 0 0.4rem 0.4rem rgba(188, 75, 255, 1) inset;
+}
+#price_section p {
+   font-style: italic;
+   font-weight: bold;
+   font-family: "Overlock";
+   letter-spacing: 0.2rem;
+   font-size: 1.2rem;
+   text-align: center;
+   margin-top: 0.75rem;
+   color: rgba(26, 83, 92, 1);
+}
+@font-face {
+    font-family: "Overlock"; 
+    src: url("../fonts/Z9XTDmdMWRiN1_T9Z7Tc2O6skw.woff2") format("woff2"); 
+    font-style: normal; 
+    font-weight: normal; 
+    font-display: block;
+}
+@media (min-width: 1500px) {
+    .container {
+        width: 1400px;
+        place-self: center;
+    }
+}
+@media(max-width: 360px) {
+    .card {
+        width: 18rem;
+        height: 27rem;
+    }
+    .card::before {
+        width: 9rem;
+        height: 9rem;
+    }
+    .card::after {
+        width: 7.2rem;
+        height: 8.1rem;
+        margin-top: -3.5rem;
+    }
+    #heading {
+        margin-top: -0.5rem;
+    }
+    #heading h1 {
+        font-size: 1.6rem; 
+    }
+    #text h2 {
+        font-size: 1.2rem; 
+    }
+    #price_section p {
+        font-size: 1.1rem;
+    }
+}
+@media(max-width: 320px) {
+    .card {
+        width: 15rem;
+        height: 22.5rem;
+    }
+    .card::before {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    .card::after {
+        width: 6rem;
+        height: 6.75rem;
+        margin-top: -1rem;
+    }
+    #heading {
+        margin-top: 0.5rem;
+    }
+    #heading h1 {
+        font-size: 1.5rem; 
+    }
+    #text h2 {
+        font-size: 1.05rem; 
+    }
+    .price_section_element {
+        width: 5rem;
+        height: 1.875rem;
+    }
+    #price_section p {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+}
+@media(max-width: 279px) {
+    .container {
+        display: none;
+    }
+}

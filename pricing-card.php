@@ -1,0 +1,45 @@
+<!--
+/**
+* Pricing Card
+* The responsive brilliant card
+*
+*
+* @ Author Jane Rhino <rhino@mailfence.com>
+* @ Github https://github.com/rhino-business
+* @ Copyright 2025 rhino@mailfence.com
+* @ Link https://rhino.business
+* @ Released on: June, 2025
+*/
+-->
+
+<!doctype html>
+ <html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <title>Pricing Card</title>
+        <meta name="description" content="Responsive Pricing Card">
+            <link rel="stylesheet" href = "styles/pricing-card.css"> 
+   </head>
+    <body>
+      <div class = "container"> 
+        <div class = "box">
+          <div class = "card">
+              <section id = "heading">
+                  <h1>Outdoor plants</h1>
+              </section>
+              <section id = "text">
+                  <h2>Bougainvillea spectabilis</h2>
+              </section>
+              <section id = "price_section">
+                   <div class = "price_section_element">                 
+                      <p>$22.99</p>
+                   </div>
+              </section>
+          </div> 
+        </div>
+      </div>            
+    </body>
+ </html>  
+  
+ 
